@@ -1,0 +1,189 @@
+.row::after {
+    content: "";
+    clear: both;
+    display:grid;
+    }
+
+@media only screen and (max-width: 767px){
+    [class*="col-"] {
+        width: 90%;
+    }
+    .talha-A-Head{
+        font-size: 35px;
+         transition: transform 2s, font-size 2s,  display 2s, flex-direction 2s, justify-content 2s, align-items 2s;
+         animation: moveHead 3s infinite;
+     }
+     
+     @keyframes moveHead {
+         0% {
+             transform:translateX(15px)
+           }
+           25% {
+             transform:translateX(30px)
+           }
+           50% {
+             transform:translateX(45px)
+           }
+           75% {
+             transform:translateX(30px);
+           }
+           100% {
+             transform:translateX(15px)
+              }
+       }
+     .talha-A-Head:hover{
+         font-size: 40px;
+         display: grid;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         color: #3e224cda;
+     }
+     
+     
+     .talha-A-subHead{
+         font-size: 20px;
+         margin: 20px;
+         display: grid;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         animation: Animation 2s ease-in-out infinite;
+     }
+     @keyframes Animation {
+         0% {
+           transform: scale(1);
+         }
+         50% {
+             transform:scale3d(1.5,1.5,1.5);
+           color:black
+         }
+         100% {
+           transform: scale(1);
+         }
+       }
+       .talha-A-image{
+        align-self: center;
+        width: 90%;
+        box-shadow: 8px 8px 3px 3px rgba(0,0,0,0.7);
+    }
+    .talha-A-image:hover{
+        width: 100%;
+        box-shadow: 9px 9px 0px 0px rgba(255,255,255,0.7);
+    }
+    a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (min-width: 768px){
+    
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.talha-A-Head{
+   font-size: 35px;
+    transition: transform 2s, font-size 2s,  display 2s, flex-direction 2s, justify-content 2s, align-items 2s;
+    animation: moveHead 3s infinite;
+}
+@keyframes moveHead {
+    0% {
+        transform:translateX(50px);
+      }
+      25% {
+        transform:translateX(100px);
+      }
+      50% {
+        transform:translateX(150px);
+      }
+      75% {
+        transform:translateX(100px);
+      }
+      100% {
+        transform:translateX(50px);
+         }
+  }
+.talha-A-Head:hover{
+    font-size: 50px;
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #3e224cda;
+}
+
+
+.talha-A-subHead{
+    font-size: 20px;
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: Animation 2s ease-in-out infinite;
+}
+@keyframes Animation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+        transform:scale3d(1.5,1.5,1.5);
+      color:black
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+
+.talha-A-image{
+    align-self: center;
+    margin: 10px;
+    width: 60%;
+    height: 50%;
+    box-shadow: 10px 10px 5px 5px rgba(0,0,0,0.7);
+
+}
+.talha-A-image:hover{
+    width: 70%;
+    height: 60%;
+    box-shadow: 12px 12px 0px 0px rgba(255,255,255,0.7);
+}
+
+a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+}
+ 
+*{
+    box-sizing: border-box;
+    }
+body{
+    background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+    background-attachment:fixed; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+}
+html {
+font-family:cursive;
+color:white;
+
+}
