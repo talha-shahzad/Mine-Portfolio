@@ -46,7 +46,7 @@
 </div>
 <div class="row">
     <div class="col-12">
-            <form class="talha-A-center">
+            <form class="talha-A-center" id="contactForm">
                 <label for="name">Name:</label>
                 <input type="text" class="talha-A-inp" placeholder="Your Name">
                 <label for="email">Email:</label>
@@ -54,9 +54,9 @@
                 <label for="message">Message:</label>
                 <input type="text" class="talha-A-inp" placeholder="Feel Free to Ask or Tell..">
                 <input type="submit" class="talha-A-sub" value="Submit">
-                <div class="talha-A-message">
-                    Thank You for Contacting
-                </div>
+            <div class="talha-A-message" id="thankYouMessage" style="display: none;">
+                Thank You for Contacting
+            </div>
             </form>
         </div>
     </div>
@@ -73,6 +73,19 @@
     </div>
 
 
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent form from submitting
 
+    // Show the thank you message
+    document.getElementById('thankYouMessage').style.display = 'block';
+
+    // Optionally, you can clear the form fields
+    document.getElementById('name').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('message').value = '';
+});
+
+</script>
 </body>
 </html>
