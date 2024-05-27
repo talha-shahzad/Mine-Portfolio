@@ -31,14 +31,7 @@
              transform:translateX(15px)
               }
        }
-     .talha-A-Head:hover{
-         font-size: 40px;
-         display: grid;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-         color: #3e224cda;
-     }
+
      
      
      .talha-A-subHead{
