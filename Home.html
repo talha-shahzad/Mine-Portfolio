@@ -6,14 +6,22 @@
 <link rel="stylesheet" href="CSS/home.css">
 </head>
 <body>
+   
     <div class="talha-A-header">
             <div class="row">
                 <div class="col-3">
                     <div class="talha-A-image"></div>
                 </div> 
-                <div class="col-9">
+                <div class="col-6">
                     <h1 class="talha-A-name">TALHA SHAHZAD</h1>
                     <p class="talha-A-prof"> Software Developer </p>
+                </div>
+                <div class="col-3">
+                    <div class="talha-A-contact">
+                        <h2 class="talha-A-contact-text">Contact Me</h2>
+                        <p class="talha-A-contact-text">Email: talha.shahzad.officials@gmail.com</p>
+                        <p class="talha-A-contact-text">LinkedIn: <a style="color:white;" href="https://www.linkedin.com/in/talha-shahzad-552b6a263/">Talha Shahzad</a></p>
+                        </div>
                 </div>
             </div>
     </div>
@@ -54,11 +62,10 @@
             <div class="talha-A-interest">
                 <h1 class="talha-A-int">INTERESTS</h1>
                 <ol>
-                    <li>Video Gaming</li>
-                    <li>Watching Movies</li>
-                    <li>Cricket</li>
-                    <li>Learning</li>
-                    <li>Hicking</li>
+                    <li>Artificial Intelligence</li>
+                    <li>Data Science</li>
+                    <li>Cloud Computing</li>
+                    <li>LLMs</li>
                 </ol>
             </div>
         </div>
@@ -78,6 +85,45 @@
         <div class="talha-A-rights">
                 ALL RIGHTS RESERVED FOR TALHA SHAHZAD
             </div>
+            <script>
+              const image = document.querySelector('.talha-A-center-img');
 
+image.addEventListener('mousemove', (e) => {
+    const rect = image.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    const width = rect.width;
+    const height = rect.height;
+    const halfWidth = width / 2;
+    const halfHeight = height / 2;
+
+    let rotateY = 0;
+    let rotateX = 0;
+
+    if (x < halfWidth) {
+        // Hovering on the left half
+        rotateY = 15;
+    } else {
+        // Hovering on the right half
+        rotateY = -15;
+    }
+
+    if (y < halfHeight) {
+        // Hovering on the top half
+        rotateX = -15;
+    } else {
+        // Hovering on the bottom half
+        rotateX = 15;
+    }
+
+    image.style.transform = `perspective(600px) rotateY(${rotateY}deg) rotateX(${rotateX}deg)`;
+});
+
+image.addEventListener('mouseleave', () => {
+    // Reset the transformation when the mouse leaves the image
+    image.style.transform = 'perspective(600px) rotateY(0deg) rotateX(0deg)';
+});
+
+                </script>
 </body>
 </html>
